@@ -1,0 +1,125 @@
+body {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.item1 {
+    grid-area: head;
+    padding: 5% 0 5% 15%; 
+}
+
+.item2 {
+    grid-area: image;
+}
+
+.item3 {
+    grid-area: main;
+    padding: 0% 0 5% 15%; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "head head head image image"
+        "main main main image image"
+        "main main main image image"
+        "main main main image image";
+    
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.thin {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.thick {
+    font-weight: 600;
+}
+
+.description {
+    width: 60%;
+    color: hsl(0, 36%, 70%);
+    opacity: 70%;
+}
+
+#Email {
+    background-repeat: no-repeat;
+    background-position: 83% center;
+    border-radius: 25px;
+    border: 2px solid hsl(0, 36%, 70%);
+    padding: 12px; 
+    outline: none;
+    width: 50%;
+}
+
+#btn {
+    background-image: linear-gradient(135deg , hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    outline: none;
+    border-radius: 25px;
+    border: 0;
+    width: 10%;
+    padding: 10px;
+    position: relative;
+    top: 4px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px){
+    body{
+        text-align: center;
+    }
+    
+    .grid-container {
+        display: block;
+    }
+    
+    .item1 {
+        text-align: left !important;
+    }
+    
+    .item3 {
+        padding: 0 10%;
+    }
+    .description {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    #Email {
+        width: 65%;
+    }
+    
+    #btn {
+        width: 20%;
+        right: 13%;
+    }
+    
+    
+    
+}
+
+
+
+
+
+

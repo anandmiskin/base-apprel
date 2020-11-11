@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">    
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    
+    
+    <div class="grid-container">
+        
+        <div class="item1">
+            <img src="images/logo.svg">
+        </div>    
+        <div class="item2">
+            <picture>
+                <source media="(max-width:400px)" srcset="images/hero-mobile.jpg">
+                <source media="(min-width:720px)" srcset="images/hero-desktop.jpg">
+                <img style="width: 100%" src="images/hero-desktop.jpg">
+            </picture>    
+        </div>
+        
+        <div class="item3">
+              
+              <h1><span class="thin">W E ' R E</span><br><span class="thick">C O M I N G <br>S O O N</span></h1>
+            
+            
+
+              <p class="description">Hello fellow shoppers! We're currently building our new fashion store. 
+              Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+            <form style="margin-top: 50px" class="form" onsubmit="Validate(); return false;">
+            <div class="inputform">    
+                <input type="text" id="Email" name="email" placeholder="Email Address">
+                <button id="btn" type="submit"><img src="images/icon-arrow.svg"></button>
+                <p id="result"></p>
+            </div>
+            </form>    
+  
+              <footer style="padding: 50px">
+                <p class="attribution">
+                  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                  Coded by <a href="#">Your Name Here</a>.
+                </p>
+              </footer>
+        </div>    
+    </div>
+
+  
+<script src="index.js"></script>    
+</body>
+</html>
